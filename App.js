@@ -2,7 +2,7 @@ import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React, {useState} from 'react';
 import axios from 'axios';
 import DropDownPicker from 'react-native-dropdown-picker';
-import Key from './src/auth/Key';
+import API_KEY from './src/auth/Key';
 
 const App = () => {
   const [Result, setResult] = useState('');
@@ -29,7 +29,7 @@ const App = () => {
       url: 'https://sameer-kumar-aztro-v1.p.rapidapi.com/',
       params: {sign: sign, day: 'today'},
       headers: {
-        'X-RapidAPI-Key': Key,
+        'X-RapidAPI-Key': API_KEY,
         'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com',
       },
     };
